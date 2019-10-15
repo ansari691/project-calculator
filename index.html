@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <form name="calculator">
+
+
+            <p id="heading">Calculator</p><br>
+            <input type="text" name="answer" id="answer" value="0">
+
+
+            <div class="num-pad">
+                <button type="button" id="AC" value="AC" onclick="calculator.answer.value = '' ">AC</button>
+                <button type="button" id="delete" value="delete"
+                    onclick="calculator.answer.value = calculator.answer.value.slice(0,calculator.answer.value.length-1)">delete</button>
+                <button type="button" id="%" value="%" onclick="calculator.answer.value += '%'">%</button>
+                <button type="button" id="/" value="/" onclick="calculator.answer.value += '/'">/</button>
+                <button type="button" id="7" value="7" onclick="calculator.answer.value += '7'">7</button>
+                <button type="button" id="8" value="8" onclick="calculator.answer.value += '8'">8</button>
+                <button type="button" id="9" value="9" onclick="calculator.answer.value += '9'">9</button>
+                <button type="button" id="x" value="x" onclick="calculator.answer.value += '*'">x</button>
+                <button type="button" id="4" value="4" onclick="calculator.answer.value += '4'">4</button>
+                <button type="button" id="5" value="5" onclick="calculator.answer.value += '5'">5</button>
+                <button type="button" id="6" value="6" onclick="calculator.answer.value += '6'">6</button>
+                <button type="button" id="-" value="-" onclick="calculator.answer.value += '-'">-</button>
+                <button type="button" id="1" value="1" onclick="calculator.answer.value += '1'">1</button>
+                <button type="button" id="2" value="2" onclick="calculator.answer.value += '2'">2</button>
+                <button type="button" id="3" value="3" onclick="calculator.answer.value += '3'">3</button>
+                <button type="button" id="+" value="+" onclick="calculator.answer.value += '+'">+</button>
+                <button type="button" id="00" value="00" onclick="calculator.answer.value += '00'">00</button>
+                <button type="button" id="0" value="0" onclick="calculator.answer.value += '0'">0</button>
+                <button type="button" id="." value="." onclick="calculator.answer.value += '.'">.</button>
+                <button type="button" id="equal" value="="
+                    onclick="calculator.answer.value = eval(calculator.answer.value)">=</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
